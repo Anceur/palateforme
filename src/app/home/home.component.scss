@@ -1,0 +1,102 @@
+// Variables for colors and spacing
+$primary-color: #2c3e50;
+$secondary-color: #0000;
+$highlight-color: #3498db;
+$text-color: #2c3e50;
+$padding: 15px;
+$margin: 10px;
+$border-radius: 5px;
+
+
+// Sidebar navigation styles
+.main-nav {
+    z-index: 1;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+ right: 0;
+  background-color: $primary-color;
+  padding-top: 20px;
+  text-align: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      a {
+        padding: $padding;
+        text-decoration: none;
+        font-size: 18px;
+        color:rgb(0, 0, 0);
+        display: block;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: $highlight-color;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Header styles
+header {
+    background-color: #ffff;
+    color: #ecf0f1;
+    padding: 22px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+   
+    position: absolute;
+    left: -11px;
+    top: 0;
+    width: 98%;
+
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin-right: $margin;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: rgb(0 0 0);
+          font-weight: 600;
+          font-size: 1rem;
+          padding: $padding;
+          transition: background-color 0.3s, color 0.3s;
+
+          &:hover {
+            background-color: $highlight-color;
+            color: $secondary-color;
+            border-radius: $border-radius;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Additional styles for other components can go here
